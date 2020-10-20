@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridViewFragment"> <!-- TODO: Update blank fragment layout -->
+    <TextView
+    android:id="@+id/textTitulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="100dp"
+    android:layout_marginTop="100dp"
+    android:gravity="center"
+    android:text="Tabla de Selección (GridView)"
+    android:textColor="#0C4176"
+    android:textSize="10pt"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mostrarDescripInformacionInformacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="5"
+        android:singleLine="false"
+        android:text="El componente GridView, visualiza al usuario una lista de opciones en forma de tabla o de rejilla."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridView
+        android:id="@+id/tablaOpciones"
+        android:layout_width="400dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="50dp"
+        android:columnWidth="50dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textTitulo" />
+
+    <TextView
+        android:id="@+id/opcionSeleccionada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="#0C4176"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablaOpciones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
